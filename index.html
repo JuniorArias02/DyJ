@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaniYJuni - Subir Imágenes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <div class="upload-card">
+            <!-- Header -->
+            <div class="header">
+                <div class="icon-wrapper">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 18C4.23858 18 2 15.7614 2 13C2 10.2386 4.23858 8 7 8C7.33333 5.33333 9.4 2 13 2C16.6 2 18.6667 5.33333 19 8C21.7614 8 24 10.2386 24 13C24 15.7614 21.7614 18 19 18H7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 12V22M12 12L9 15M12 12L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h1 class="title">DaniYJuni</h1>
+                <p class="subtitle">Sube tus imágenes PNG aquí</p>
+            </div>
+
+            <!-- Upload zone -->
+            <div class="upload-zone" id="uploadZone">
+                <input type="file" id="fileInput" accept=".png" multiple hidden>
+                <div class="upload-content">
+                    <div class="upload-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 4V16M12 4L8 8M12 4L16 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 17V19C4 20.1046 4.89543 21 6 21H18C19.1046 21 20 20.1046 20 19V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="upload-title">Arrastra tus imágenes aquí</h3>
+                    <p class="upload-text">o haz clic para seleccionar</p>
+                    <p class="upload-hint">Solo archivos PNG</p>
+                </div>
+            </div>
+
+            <!-- Preview area -->
+            <div class="preview-area" id="previewArea"></div>
+
+            <!-- Download button -->
+            <button class="download-btn hidden" id="downloadBtn">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4V16M12 16L8 12M12 16L16 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 17V19C4 20.1046 4.89543 21 6 21H18C19.1046 21 20 20.1046 20 19V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Descargar Todas
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Hecho con ❤️ para DaniYJuni</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
